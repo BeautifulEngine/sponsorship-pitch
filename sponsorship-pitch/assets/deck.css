@@ -1,0 +1,68 @@
+/* Beautiful Engine skills: 16:9 slide stylesheet. Load after base.css. Edit in shared/assets, then run scripts/build.sh. */
+@page { size: 13.333in 7.5in; margin: 0; }
+@page cover { margin: 0; }
+body { font-size: 12.5pt; line-height: 1.45; counter-reset: slide; }
+
+.slide {
+  width: 13.333in; height: 7.5in; position: relative; overflow: hidden;
+  padding: 0.62in 0.8in 0.7in; display: flex; flex-direction: column;
+  background: var(--paper); color: var(--ink); break-after: page; counter-increment: slide;
+}
+.slide:last-child { break-after: auto; }
+.slide .eyebrow { font-family: var(--font-label); font-size: 9.5pt; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.slide h2 {
+  font-family: var(--font-display); font-weight: var(--display-weight); letter-spacing: var(--display-tracking);
+  font-size: 30pt; line-height: 1.08; margin: 8pt 0 16pt; max-width: 10.5in; color: var(--ink);
+}
+.slide h3 { font-size: 15pt; margin: 0 0 6pt; }
+.slide h3 .num { font-size: 10pt; }
+.slide .lede { font-size: 15.5pt; line-height: 1.4; max-width: 9.8in; color: var(--ink); }
+.slide p, .slide li { font-size: 12.5pt; }
+.slide .small { font-size: 10pt; }
+.slide .body { min-height: 0; }
+.slide .foot {
+  position: absolute; left: 0.8in; right: 0.8in; bottom: 0.32in;
+  display: flex; justify-content: space-between; font-size: 8.5pt; color: var(--muted);
+}
+.slide .foot::after { content: counter(slide); }
+
+/* Title slide: brand cover. Text here is checked by eye, not by the audit. */
+.slide.title-slide { background: var(--cover-bg); color: var(--cover-ink); justify-content: flex-end; padding-bottom: 0.8in; }
+.title-slide .eyebrow { color: var(--cover-ink); opacity: .8; }
+.title-slide h1 {
+  font-family: var(--font-display); font-weight: var(--display-weight); letter-spacing: var(--display-tracking);
+  font-size: 54pt; line-height: 1.0; margin: 10pt 0 14pt; max-width: 11in;
+}
+.title-slide .dek { font-size: 17pt; line-height: 1.35; max-width: 9in; opacity: .92; }
+.title-slide .meta { margin-top: 26pt; font-size: 10pt; opacity: .8; border-top: 0.75pt solid var(--cover-rule); padding-top: 9pt; }
+.title-slide .art { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+.title-slide > *:not(.art) { position: relative; }
+
+/* Section divider in the brand color */
+.slide.section { background: var(--brand); color: var(--brand-ink); justify-content: center; }
+.slide.section .eyebrow, .slide.section h2, .slide.section .lede, .slide.section .foot { color: var(--brand-ink); }
+.slide.section h2 { font-size: 44pt; }
+
+/* Layout */
+.grid { display: grid; gap: 16pt 20pt; align-content: start; }
+.g2 { grid-template-columns: 1fr 1fr; } .g3 { grid-template-columns: repeat(3, 1fr); } .g4 { grid-template-columns: repeat(4, 1fr); }
+.g-2-1 { grid-template-columns: 2fr 1fr; } .g-1-2 { grid-template-columns: 1fr 2fr; }
+.panel { background: var(--brand-soft); border-radius: var(--radius); padding: 14pt 16pt; break-inside: avoid; }
+.panel.accent { background: var(--accent-soft); }
+.panel.line { background: transparent; border: 0.9pt solid var(--rule); }
+.panel h3 { margin-top: 0; }
+.panel ul { margin: 4pt 0 0; padding-left: 14pt; }
+.panel li { margin-bottom: 3pt; }
+.kpi .v { font-family: var(--font-display); font-weight: var(--display-weight); letter-spacing: var(--display-tracking); font-size: 34pt; line-height: 1; color: var(--brand); }
+.kpi .k { font-family: var(--font-label); font-size: 9pt; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 6pt; }
+.kpi .n { font-size: 9.5pt; color: var(--muted); margin-top: 3pt; }
+.slide table.data { font-size: 11pt; }
+.slide table.data th, .slide table.data td { padding: 6pt 8pt; }
+.steps { counter-reset: step; list-style: none; padding: 0; margin: 0; }
+.steps li { counter-increment: step; position: relative; padding-left: 30pt; margin-bottom: 9pt; }
+.steps li::before { content: counter(step); position: absolute; left: 0; top: -1pt; width: 20pt; height: 20pt; border-radius: 50%; background: var(--brand); color: var(--brand-ink); font-size: 10pt; font-weight: 600; display: grid; place-items: center; }
+.plan { border: 0.9pt solid var(--rule); border-radius: var(--radius); padding: 8pt; background: var(--paper); }
+.plan svg { display: block; width: 100%; height: auto; }
+.chip-row { display: flex; flex-wrap: wrap; gap: 6pt; }
+.chip-row span { font-size: 9.5pt; border: 0.8pt solid var(--rule); border-radius: 999px; padding: 3pt 9pt; }
+.notes { display: none; } /* speaker notes live in a separate notes file */
