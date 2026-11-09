@@ -14,10 +14,10 @@ body { font-size: 12.5pt; line-height: 1.45; counter-reset: slide; }
   font-family: var(--font-display); font-weight: var(--display-weight); letter-spacing: var(--display-tracking);
   font-size: 30pt; line-height: 1.08; margin: 8pt 0 16pt; max-width: 10.5in; color: var(--ink);
 }
-.slide h3 { font-size: 15pt; margin: 0 0 6pt; }
+.slide h3 { font-size: 16pt; margin: 0 0 6pt; }
 .slide h3 .num { font-size: 10pt; }
-.slide .lede { font-size: 15.5pt; line-height: 1.4; max-width: 9.8in; color: var(--ink); }
-.slide p, .slide li { font-size: 12.5pt; }
+.slide .lede { font-size: 17.5pt; line-height: 1.4; max-width: 9.8in; color: var(--ink); }
+.slide p, .slide li { font-size: 14pt; }
 .slide .small { font-size: 10pt; }
 .slide .body { min-height: 0; }
 .slide .foot {
@@ -53,10 +53,10 @@ body { font-size: 12.5pt; line-height: 1.45; counter-reset: slide; }
 .panel h3 { margin-top: 0; }
 .panel ul { margin: 4pt 0 0; padding-left: 14pt; }
 .panel li { margin-bottom: 3pt; }
-.kpi .v { font-family: var(--font-display); font-weight: var(--display-weight); letter-spacing: var(--display-tracking); font-size: 34pt; line-height: 1; color: var(--brand); }
-.kpi .k { font-family: var(--font-label); font-size: 9pt; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 6pt; }
-.kpi .n { font-size: 9.5pt; color: var(--muted); margin-top: 3pt; }
-.slide table.data { font-size: 11pt; }
+.kpi .v { font-family: var(--font-display); font-weight: var(--display-weight); letter-spacing: var(--display-tracking); font-size: 40pt; line-height: 1; color: var(--brand); }
+.kpi .k { font-family: var(--font-label); font-size: 10pt; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 6pt; }
+.kpi .n { font-size: 10.5pt; color: var(--muted); margin-top: 3pt; }
+.slide table.data { font-size: 12.5pt; }
 .slide table.data th, .slide table.data td { padding: 6pt 8pt; }
 .steps { counter-reset: step; list-style: none; padding: 0; margin: 0; }
 .steps li { counter-increment: step; position: relative; padding-left: 30pt; margin-bottom: 9pt; }
@@ -64,5 +64,7 @@ body { font-size: 12.5pt; line-height: 1.45; counter-reset: slide; }
 .plan { border: 0.9pt solid var(--rule); border-radius: var(--radius); padding: 8pt; background: var(--paper); }
 .plan svg { display: block; width: 100%; height: auto; }
 .chip-row { display: flex; flex-wrap: wrap; gap: 6pt; }
-.chip-row span { font-size: 9.5pt; border: 0.8pt solid var(--rule); border-radius: 999px; padding: 3pt 9pt; }
+.chip-row span { font-size: 11pt; border: 0.8pt solid var(--rule); border-radius: 999px; padding: 3pt 9pt; }
 .notes { display: none; } /* speaker notes live in a separate notes file */
+.slide table.glance th, .slide table.glance td { font-size: 12pt; padding: 6pt 8pt; }
+.slide table.glance th { font-size: 10pt; }

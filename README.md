@@ -4,6 +4,10 @@ Turn "brand + property" into a partnership pitch a sales team could walk into a 
 
 **What you get:** Builds a sponsorship or brand partnership pitch deck as a designed 16:9 PDF with speaker notes, from a brand and a property (venue, event, team, league, festival, tour, creator, platform or media property). Researches both sides, shows why they fit, proposes activation ideas, packages partnership tiers, and lays out how results will be measured.
 
+![Pages from a sample Sponsorship Pitch: title, the opportunity, an activation idea, partnership tiers](docs/preview.png)
+
+**See the full sample:** [Sample-Lumen-x-Paloma-Park-Sessions-Partnership-Pitch.pdf](examples/Sample-Lumen-x-Paloma-Park-Sessions-Partnership-Pitch.pdf) (fictional names and figures)
+
 Made by Beautiful Engine · [beautifulengine.com](https://www.beautifulengine.com) · [Questions or ideas? Open an issue](https://github.com/BeautifulEngine/sponsorship-pitch/issues/new)
 
 ## Install
@@ -36,6 +40,8 @@ mkdir -p ~/.claude/skills && cp -r sponsorship-pitch/sponsorship-pitch ~/.claude
 Then use `/sponsorship-pitch`.
 
 ## Usage
+
+![Animated demo: example requests typed into Claude, each followed by what the Sponsorship Pitch skill makes](docs/how-to-ask.gif)
 
 ```
 /sponsorship-pitch <brand> x <property> [budget or tier] [short] [leave-behind]
