@@ -4,9 +4,9 @@ Turn "brand + property" into a partnership pitch a sales team could walk into a 
 
 **What you get:** Builds a sponsorship or brand partnership pitch deck as a designed 16:9 PDF with speaker notes, from a brand and a property (venue, event, team, league, festival, tour, creator, platform or media property). Researches both sides, shows why they fit, proposes activation ideas, packages partnership tiers, and lays out how results will be measured.
 
-![Pages from a sample Sponsorship Pitch: title, the opportunity, an activation idea, partnership tiers](docs/preview.png)
+![Pages from a sample Sponsorship Pitch: title, the opportunity, idea 1: R2 Fog Camp, partnership tiers](docs/preview.png)
 
-**See the full sample:** [Sample-Lumen-x-Paloma-Park-Sessions-Partnership-Pitch.pdf](examples/Sample-Lumen-x-Paloma-Park-Sessions-Partnership-Pitch.pdf) (fictional names and figures)
+**See the full sample:** [Sample-Outside-Lands-x-Rivian-Partnership-Pitch.pdf](examples/Sample-Outside-Lands-x-Rivian-Partnership-Pitch.pdf) (an unofficial spec sample with real brands and sourced figures; not affiliated with or endorsed by Outside Lands or Rivian)
 
 Made by Beautiful Engine · [beautifulengine.com](https://www.beautifulengine.com) · [Questions or ideas? Open an issue](https://github.com/BeautifulEngine/sponsorship-pitch/issues/new)
 
